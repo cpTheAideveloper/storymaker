@@ -27,7 +27,7 @@ export async function POST(request: Request) {
       messages: [{ role: "system", content: systemMessage }],
     });
 
-    const story = completion.choices[0].message.content.trim();
+    const story = completion.choices[0].message.content!.trim();
 
     const response: StoryResponse = { story };
     console.log(story)
