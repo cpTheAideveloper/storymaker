@@ -3,7 +3,7 @@
 
 
 interface Props {
-  userIdea: string;
+  userIdea?: string | undefined;
   onChange: (idea: string) => void;
 }
 
