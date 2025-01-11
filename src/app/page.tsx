@@ -67,7 +67,7 @@ export default function Home() {
     if (step === 4)
       return (
         <IdeaStep
-          userIdea={options.userIdea || ""}
+          userIdea={options.userIdea}
           onChange={(idea) => setOptions({ ...options, userIdea: idea })}
         />
       );
